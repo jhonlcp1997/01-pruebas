@@ -22,6 +22,9 @@ Route::get('/', function () {
 Route::get('/dashboard', DashboardController::class)->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/dashboard/{blog}', [DashboardController::class, 'show'])->middleware(['auth', 'verified'])->name('blog.show');
 Route::patch('/dashboard/{blog}', [DashboardController::class, 'edit'])->middleware(['auth', 'verified'])->name('blog.edit');
+Route::get('/create', [DashboardController::class, 'storeshow'])->middleware(['auth', 'verified'])->name('dashboard.storeshow');
+Route::post('/create', [DashboardController::class, 'store'])->middleware(['auth', 'verified'])->name('dashboard.storeshow');
+
 
 
 Route::middleware('auth')->group(function () {
