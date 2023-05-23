@@ -5,7 +5,9 @@
         </h2>
     </x-slot>
 
-    <img src="image/fatigayanimo.png" alt="img">
+    <div class="w-full">
+        <img class="flex m-auto" src="image/fatigayanimo.png" alt="img">
+    </div>
 
     <form class="max-w-2xl w-full bg-white p-8 text-xl rounded my-2  mx-auto" action="{{ route('dashboard.storeshow')}}"
         method="POST">

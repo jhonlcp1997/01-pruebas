@@ -37,7 +37,7 @@
         </div>
         <div class="my-4">
             <h5 class="font-black">Descripción:</h5>
-            <p>{{$blog->descriptionBlog}}</p>
+            {!! $blog->descriptionBlog !!}
         </div>
     </div>
 
