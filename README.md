@@ -64,3 +64,33 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+=====================
+=====================
+=====================
+=====================
+=====================
+
+# Referencia del Proyecto
+**Este proyecto es el backend de pruebas-01v2-immetabolico**
+
+*El proyecto en sí, está enfocado a las 2 principales secciones de del front: Blogs y Eventos. La autenticación se realizó con laravel breeze, quedaría agregar un tipo de persona que se registra*
+
+- Alternativas para tipo de usuario:
+    - Administrador
+    - Doctor
+
+## Lo que se agregará
+
+- Subida de imagen para Blog y Eventos
+- El creador de cuenta se verá reflejado en el autor de Blog
+- La fecha se agregará automaticamente
+- funcionalidad a los botones de siguiente atras en Blogs
+- lógica para fechas en Eventos
+
+### Lo que tendrá permitido el doctor
+- Subir imagen y crear un blog
+
+### Lo que no tendrá permitido el doctor
+- eliminar otro blog 
+- crear un evento
