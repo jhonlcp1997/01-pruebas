@@ -120,6 +120,16 @@
             >{{$blog->descriptionBlog}}</textarea>
             <x-input-error :messages="$errors->get('descriptionBlog')" class="mt-2" />
         </div>
+        <script>
+            ClassicEditor
+                .create( document.querySelector( '#descriptionBlog' ) )
+                .then( editor => {
+                        console.log( editor );
+                } )
+                .catch( error => {
+                        console.error( error );
+                } );
+        </script>
         <button
             type="submit"
             class="py-2 px-4 bg-indigo-600 text-white rounded">
